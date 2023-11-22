@@ -1,0 +1,99 @@
+body {
+  background-image: url(IMG_E2677.jpeg);
+  font-weight: bold;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "aside-one main main main aside-two"
+    "aside-one main main main aside-two"
+    "footer footer footer footer footer"
+  ;
+  min-height: 80vh;
+  margin-top: 4rem;
+  gap: 0.5rem;
+}
+
+.grid-item {
+  font-size: 20px;
+  background-image: url(IMG_E2676.jpeg);
+  padding: 20px;
+  font-family: Copperplate, Papyrus, fantasy;
+  color: orange;
+}
+
+/* ADD STYLES TO EACH OF THE FOLLOWING SELECTORS */
+img {
+  float: right;
+  width: 200px;
+  border-radius: 100%;
+  border: 4px;
+  margin: 10px;
+}
+
+.header {
+  grid-area: header;
+  background: url("IMG_2808.png");
+  font-size: 20px;
+  padding: 17px;
+  width: 95%;
+  float: left;
+}
+
+ul {
+  border: solid;
+  border-color: #FE0000;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url(IMG_E2676.jpeg);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: orange;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: Copperplate, Papyrus, fantasy
+}
+
+li a:hover {
+  background-color: #FE0000;
+}
+
+.footer {
+  grid-area: footer;
+  color: orange;
+  text-align: center;
+  font-family: Copperplate, Papyrus, fantasy;
+  border: solid;
+  border-color: #FE0000;
+}
+
+h1 {
+  color: orange;
+  text-align: center;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.fade-in{
+  animation: fade-in 7s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+/* WRITE YOUR CODE HERE */
